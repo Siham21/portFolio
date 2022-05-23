@@ -1,0 +1,71 @@
+body{
+  
+    height: 100vh;
+} 
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100%;
+    background-color: white;
+    }
+    
+    .header { grid-area: 1 / 1 / 2 / 10; 
+        /* border-bottom: 2px solid black; */
+    }
+       .header h1 { 
+
+        font: size 70px;
+        text-align: center;
+        color: lightpink;
+        text-shadow: 5px 5px 5px lightpink;
+        font-style: italic ;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+         .header p {
+        
+             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+   
+   
+    .main { grid-area: 2 / 1 / 5 / 6; 
+        /* border-bottom: 2px solid black; */
+        /* border-right: 2px solid black; */
+        background-image: url("Asset/LogoSiham.png");
+        object-fit: cover;
+        background-size: cover;
+        background-position: center;
+    }
+
+   
+   
+   
+    .right { grid-area: 2 / 6 / 5 / 10; 
+    /* border-bottom: 2px solid black; */
+    background-image: url("Asset/imagePostTravail.png");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    
+}
+* {
+    box-sizing: border-box;
+
+}
+.footer { grid-area: 5 / 1 / 6 / 10;
+    
+    display: flex;
+    
+ }
+
+.column {
+    
+    flex: 35%;
+    padding: 20px;
+}
+   
+    
